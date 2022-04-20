@@ -10,25 +10,26 @@
 <body>
 <header>
     <img class="logo" src="#" alt="Edwin Dev">
-    <nav>
+    <nav id="navbar">
         <ul class="nav_link">
             <li><a href="#">Inicio</a></li>
-            <li><a href="#">Sobre Mi</a></li>
-            <li><a href="#">Proyectos</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#about">Sobre Mi</a></li>
+            <li><a href="#pro">Proyectos</a></li>
+            <li><a href="#social">Social</a></li>
         </ul>
     </nav>
+
 </header>
-<div class="hero">
+<div class="hero" id="welcome-section">
     <h1> I am Edwin Romero<br><p>a web developer</p></h1>
 
 </div>
-<div class="content-aboutme">
+<div id="about">
     <div class="subtitle">
         <h1>Sobre mi</h1>
     </div>
-    <div class="about">
-        <div class="photo">
+    <div class="about_info">
+
             <figure>
                 <img src="https://storage.cloud.google.com/images-de/foto.jpg">
                 <figcaption>Edwin Romero</figcaption>
@@ -38,23 +39,24 @@
             <h1>Edwin Romero</h1>
             <p>Soy capaz de aprender de forma constante y responsable, también soy proactivo con capacidad de adaptación a los cambios, siempre busco obtener el mejor resultado posible para mi desempeño dentro de las labores asignadas. Siempre predispuesto para resolver conflictos aportando nuevas ideas y nuevas soluciones, tengo la pasión de colaborar y trabajar en equipo, soy capaz de captar rápidamente nuevos y diferentes procesos. Mis Conocimientos fundamentales los tengo en Javascript, CSS, HTML, Manejo básico de AWS, JSON, JQUERY</p>
 
-        </div>
+
     </div>
 
 </div>
 
 
 
-<div class="content-projects" >
+<div class="content-projects" id="pro" >
 <div class="subtitle">
     <h1>Estos son algunos de mis proyectos</h1>
 </div>
-<div class="projects">
+    <!-- Trabajos -->
+<div id="projects" >
 
     <a href="" class="carta">
         <figure>
             <img src="https://storage.googleapis.com/images-de/pagina1" >
-            <figcaption>Proyecto Página Producto</figcaption>
+            <figcaption class="project-tile">Proyecto Página Producto</figcaption>
         </figure>
 
         <button>Ver página!</button>
@@ -117,11 +119,11 @@
 
     </a>
 </div>
-    <button class="all"><a href="https://codepen.io/gitbatmanhub">Ver todo</a></button>
+    <button class="all"><a href="https://codepen.io/gitbatmanhub" target="_blank">Ver todo</a></button>
 </div>
 <!-- Links a redes sociales-->
 
-<div class="subtitle">
+<div class="subtitle" id="social">
     <h1>Redes Sociales</h1>
 </div>
 <div class="wrapper">
@@ -130,6 +132,12 @@
             Facebook
         </div>
         <span><i class="fab fa-facebook-f"></i></span>
+    </a>
+    <a href="https://wa.me/593967792636?text=Hola%20quisiera%20contratar%20tus%20servicios" target="_blank" class="icon whatsapp">
+        <div class="tooltip">
+            Whatsapp
+        </div>
+        <span><i class="fab fa-whatsapp"></i></span>
     </a>
     <a href="https://twitter.com/Edwin_pdf" target="_blank" class="icon twitter">
         <div class="tooltip">
@@ -143,7 +151,7 @@
         </div>
         <span><i class="fab fa-instagram"></i></span>
     </a>
-    <a href="https://github.com/gitbatmanhub" target="_blank" class="icon github">
+    <a id="profile-link" href="https://github.com/gitbatmanhub" target="_blank" class="icon github">
         <div class="tooltip">
             Github
         </div>
@@ -151,13 +159,9 @@
     </a>
 
 </div>
-
+<!-- Footer -->
 <footer>
-    <div>a</div>
-    <div>a</div>
-    <div>a</div>
-    <div>a</div>
+    <p>Creado por <a target="_blank" href="https://github.com/gitbatmanhub"> Edwin Romero </a></p>
 </footer>
-
 </body>
 </html>
