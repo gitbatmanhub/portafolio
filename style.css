@@ -86,6 +86,10 @@ header{
     flex-wrap: nowrap;
 
 }
+    #about img{
+        width: 300px;
+        border-radius: 50%;
+    }
 .about .personal-info{
     width: 50%;
 }
