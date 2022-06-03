@@ -8,244 +8,7 @@
     text-decoration: none !important;
     color: black;
 }
-    header{
-        background-color: rgb(255, 255, 255);
-        color: black;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 30px 10%;
-        top: 0px;
-        height: 10px;
-        position: sticky;
 
-    }
-    #navbar{
-        position: sticky;
-
-    }
-    .nav_link{
-        list-style: none;
-
-    }
-    .nav_link li{
-        display: inline-block;
-        padding: 0 20px;
-    }
-    .hero {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        height: 90vh;
-        background: url("https://storage.googleapis.com/images-de/fondo.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-    .hero h1{
-        width: 80%;
-        font-size: 90px;
-        align-items: center;
-        color: white;
-    }
-    .hero p{
-        font-size: 30px;
-        background: none;
-        color: white;
-    }
-    .hero img{
-        width: 200px;
-    }
-    #welcome-section{
-        height: 100vh;
-    }
-    #about img{
-        width: 300px;
-        border-radius: 50%;
-    }
-    .content-projects{
-
-    }
-
-    .about_info figure{
-        display: flex;
-        justify-content: center;
-        margin: 5px auto;
-    }
-
-    .about_info figcaption{
-        display: none;
-    }
-    .personal-info h1{
-        text-align: center;
-    }
-    .personal-info p{
-        margin: 10px auto;
-        width: 90%;
-    }
-
-    .subtitle{
-        text-align: center;
-        padding: 20px 10px;
-        margin: 10px auto;
-        font-size: 20px;
-    }
-    #projects{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-/* stilos cartas */
-.carta {
-    cursor: pointer;
-    width: 300px;
-    height: auto;
-    background: rgb(255, 255, 255);
-    border-radius: 5px;
-    border: 1px solid rgb(107, 135, 155);
-    transition: all .2s;
-    box-shadow: 12px 12px 2px 1px rgb(107, 135, 155);
-    margin: 10px 30px;
-    position: static;
-}
-
-.carta:hover {
-    box-shadow: -12px 12px 2px -1px rgb(107, 135, 155);
-}
-.carta img{
-    width: 100%;
-    height: 200px;
-    border-radius: 5px;
-}
-figcaption{
-    display: none;
-}
-button {
-    padding: 10px 25px;
-    border: unset;
-    border-radius: 15px;
-    color: #212121;
-    z-index: 1;
-    background: #e8e8e8;
-    position: relative;
-    font-weight: 1000;
-    font-size: 17px;
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    transition: all 250ms;
-    overflow: hidden;
-    margin: 10px auto;
-    display: flex;
-    cursor: pointer;
-}
-/* Botones de redes sociales */
-.wrapper{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin: 10px auto;
-    width: 100%;
-
-}
-.wrapper .icon{
-    margin: 40px 10px;
-    text-align: center;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-    z-index: 2;
-    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-.wrapper .icon span{
-    display: block;
-    height: 60px;
-    width: 60px;
-    background: #fff;
-    border-radius: 50%;
-    position: relative;
-    z-index: 2;
-    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
-    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-.wrapper .icon span i{
-    line-height: 60px;
-    font-size: 25px;
-}
-.wrapper .icon .tooltip{
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    background: #fff;
-    color: #fff;
-    padding: 10px 18px;
-    font-size: 20px;
-    font-weight: 500;
-    border-radius: 25px;
-    opacity: 0;
-    pointer-events: none;
-    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
-    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-.wrapper .icon:hover .tooltip{
-    top: -70px;
-    opacity: 1;
-    pointer-events: auto;
-}
-.icon .tooltip:before{
-    position: absolute;
-    content: "";
-    height: 15px;
-    width: 15px;
-    background: #fff;
-    left: 50%;
-    bottom: -6px;
-    transform: translateX(-50%) rotate(45deg);
-    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-.wrapper .icon:hover span{
-    color: #fff;
-}
-.wrapper .icon:hover span,
-.wrapper .icon:hover .tooltip{
-    text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
-}
-.wrapper .facebook:hover span,
-.wrapper .facebook:hover .tooltip,
-.wrapper .facebook:hover .tooltip:before{
-    background: #3B5999;
-}
-.wrapper .whatsapp:hover span,
-.wrapper .whatsapp:hover .tooltip,
-.wrapper .whatsapp:hover .tooltip:before{
-    background: #41b766;
-}
-.wrapper .twitter:hover span,
-.wrapper .twitter:hover .tooltip,
-.wrapper .twitter:hover .tooltip:before{
-    background: #46C1F6;
-}
-.wrapper .instagram:hover span,
-.wrapper .instagram:hover .tooltip,
-.wrapper .instagram:hover .tooltip:before{
-    background: #e1306c;
-}
-.wrapper .github:hover span,
-.wrapper .github:hover .tooltip,
-.wrapper .github:hover .tooltip:before{
-    background: #333;
-}
-footer{
-}
-footer p{
-    padding: 20px;
-    text-align: center;
-}
 
 @media  screen and (min-width: 700px) {
 header{
@@ -527,3 +290,241 @@ footer p{
 }
 }
 
+header{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    top: 0px;
+    height: 10px;
+    position: sticky;
+
+}
+#navbar{
+    position: sticky;
+
+}
+.nav_link{
+    list-style: none;
+
+}
+.nav_link li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 90vh;
+    background: url("https://storage.googleapis.com/images-de/fondo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hero h1{
+    width: 80%;
+    font-size: 90px;
+    align-items: center;
+    color: white;
+}
+.hero p{
+    font-size: 30px;
+    background: none;
+    color: white;
+}
+.hero img{
+    width: 200px;
+}
+#welcome-section{
+    height: 100vh;
+}
+#about img{
+    width: 300px;
+    border-radius: 50%;
+}
+.content-projects{
+
+}
+
+.about_info figure{
+    display: flex;
+    justify-content: center;
+    margin: 5px auto;
+}
+
+.about_info figcaption{
+    display: none;
+}
+.personal-info h1{
+    text-align: center;
+}
+.personal-info p{
+    margin: 10px auto;
+    width: 90%;
+}
+
+.subtitle{
+    text-align: center;
+    padding: 20px 10px;
+    margin: 10px auto;
+    font-size: 20px;
+}
+#projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* stilos cartas */
+.carta {
+    cursor: pointer;
+    width: 300px;
+    height: auto;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid rgb(107, 135, 155);
+    transition: all .2s;
+    box-shadow: 12px 12px 2px 1px rgb(107, 135, 155);
+    margin: 10px 30px;
+    position: static;
+}
+
+.carta:hover {
+    box-shadow: -12px 12px 2px -1px rgb(107, 135, 155);
+}
+.carta img{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+figcaption{
+    display: none;
+}
+button {
+    padding: 10px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    margin: 10px auto;
+    display: flex;
+    cursor: pointer;
+}
+/* Botones de redes sociales */
+.wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 10px auto;
+    width: 100%;
+
+}
+.wrapper .icon{
+    margin: 40px 10px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon span{
+    display: block;
+    height: 60px;
+    width: 60px;
+    background: #fff;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon span i{
+    line-height: 60px;
+    font-size: 25px;
+}
+.wrapper .icon .tooltip{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background: #fff;
+    color: #fff;
+    padding: 10px 18px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 25px;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .tooltip{
+    top: -70px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.icon .tooltip:before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50%) rotate(45deg);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover span{
+    color: #fff;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip{
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+}
+.wrapper .facebook:hover span,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip:before{
+    background: #3B5999;
+}
+.wrapper .whatsapp:hover span,
+.wrapper .whatsapp:hover .tooltip,
+.wrapper .whatsapp:hover .tooltip:before{
+    background: #41b766;
+}
+.wrapper .twitter:hover span,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip:before{
+    background: #46C1F6;
+}
+.wrapper .instagram:hover span,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip:before{
+    background: #e1306c;
+}
+.wrapper .github:hover span,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip:before{
+    background: #333;
+}
+footer{
+}
+footer p{
+    padding: 20px;
+    text-align: center;
+}
